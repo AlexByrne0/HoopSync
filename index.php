@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Latest NBA Scores</title>
+    <title>Sports Scores Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -30,6 +30,17 @@
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            padding: 8px;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
         footer {
             text-align: center;
@@ -47,23 +58,22 @@
         <h1>Sports Scores Website</h1>
     </header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="scores.html">Scores</a>
+        <a href="index.php">Home</a>
+        <a href="scores.php">Scores</a>
         <a href="#">Teams</a>
         <a href="#">Contact</a>
     </nav>
     <div class="content">
-        <h2>Latest NBA Scores</h2>
-        <ul>
-            <li>Los Angeles Lakers vs Golden State Warriors - 102-99</li>
-            <li>Brooklyn Nets vs Milwaukee Bucks - 110-115</li>
-            <li>Chicago Bulls vs Miami Heat - 98-105</li>
-            <li>Boston Celtics vs Philadelphia 76ers - 120-115</li>
-            <li>Dallas Mavericks vs Phoenix Suns - 112-108</li>
-        </ul>
+        <h2>Search for a Team</h2>
+        <form method="GET" action="">
+            <div class="search-bar">
+                <input type="text" name="query" placeholder="Search teams..." value="<?php echo isset($_GET['query']) ? htmlspecialchars($_GET['query']) : ''; ?>">
+            </div>
+            <button type="submit">Search</button>
+        </form>
     </div>
     <footer>
-        <p>© 2025 Sports Scores Website. All rights reserved.</p>
+        <p>© <?php echo date("Y"); ?> Sports Scores Website. All rights reserved.</p>
     </footer>
 </body>
 </html>
