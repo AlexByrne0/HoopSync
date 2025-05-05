@@ -1,0 +1,93 @@
+/* Product Page Styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Product Section Styling */
+main {
+    padding: 20px;
+}
+
+/* Product Section Styling */
+section {
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Product Grid Container */
+section ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* space between product cards */
+}
+
+/* Each Product Card */
+section ul li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Product Image */
+section ul li img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Product Name and Price */
+section ul li h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section ul li p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+section ul li p span {
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Add to Cart Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+

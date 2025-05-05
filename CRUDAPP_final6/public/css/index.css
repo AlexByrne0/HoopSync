@@ -1,0 +1,88 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.index-container {
+    display: flex;
+    justify-content: center; /* Center the entire container */
+    align-items: center;
+    padding: 50px 20px;
+    width: 100%;
+    position: relative; /* For absolute positioning of images */
+}
+
+.left-image, .right-image {
+    width: 18%; /* Increase image width to make them slightly bigger */
+    position: absolute; /* Position images relative to the container */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the images */
+    border-radius: 15px; /* Rounded edges for images */
+}
+
+.left-image {
+    left: 8%; /* Adjust the left image closer to the center */
+}
+
+.right-image {
+    right: 8%; /* Adjust the right image closer to the center */
+}
+
+.left-image img, .right-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* Round the edges of the images */
+}
+
+.content {
+    text-align: center;
+    width: 60%; /* Keep the content centered and large */
+}
+
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* Main "My Account" Button */
+.main-button {
+    display: inline-block;
+    background-color: #00bf63;
+    color: white;
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin-bottom: 50px;
+}
+
+.main-button:hover {
+    background-color: #009f53;
+}
+
+/* Admin Links List */
+.admin-links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.admin-links li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.admin-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.admin-links a:hover {
+    text-decoration: underline;
+}

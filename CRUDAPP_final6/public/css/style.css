@@ -1,0 +1,164 @@
+/* Whole page */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Centering everything */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+}
+
+/* Header */
+header {
+    background-color: #00bf63;
+    padding: 10px 0; /* Reduced vertical padding */
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    text-align: center;
+}
+
+/* Logo image */
+#logo {
+    width: 120px; /* Smaller logo */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+/* Header Title */
+header h1 {
+    font-size: 1.5rem; /* Smaller font size */
+    margin: 5px 0;
+}
+
+/* Navbar styles */
+nav {
+    margin-top: 10px; /* Reduced spacing */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem; /* Slightly smaller font */
+    padding: 6px 12px; /* Less padding */
+    background-color: #00bf63;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #009f53;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #e0e0e0;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    margin: 0;
+}
+
+/* Form Labels */
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Form */
+form {
+    width: 100%;
+}
+
+/* Input fields */
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: darkred;
+}
+
+/* Back to Home Link */
+a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #009f53;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Image Containers for Left and Right */
+.image-container-left,
+.image-container-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Image Styles */
+.form-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+

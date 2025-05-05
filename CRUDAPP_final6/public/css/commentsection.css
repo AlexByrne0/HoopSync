@@ -1,0 +1,140 @@
+.comment-page-container {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    background-color: #f9f9f9;
+}
+
+/* Left side */
+.comment-form-section {
+    flex: 1;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    resize: none;
+}
+
+.comment-form-section h2 {
+    margin-bottom: 15px;
+    resize: none;
+}
+
+.comment-form-section label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    resize: none;
+}
+
+.comment-form-section input[type="text"],
+.comment-form-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    resize: none;
+}
+
+.comment-form-section input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.comment-form-section input[type="submit"]:hover {
+    background: #218838;
+}
+
+.success-msg {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Centered image above form */
+.center-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.center-image img {
+    width: 80%;
+    max-width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Right side - comments */
+.comment-list-section {
+    flex: 1;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    overflow-y: auto;
+    max-height: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-list-section h2 {
+    margin-bottom: 15px;
+}
+
+.comment-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.comment-user {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.comment-time {
+    font-size: 0.8rem;
+    color: gray;
+    margin-left: 10px;
+}
+
+.comment-text {
+    font-size: 1rem;
+    color: #555;
+    resize: none;
+}
+
+.no-comments {
+    color: #888;
+    font-style: italic;
+}
+
+/* Back Button Styling */
+.back-btn-container {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.back-btn {
+    display: inline-block;
+    background: darkorange;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #0056b3;
+}
